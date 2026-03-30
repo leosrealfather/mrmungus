@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devolution - connor's books</title>
+    <style>
+        body {
+            background-color: #f5f0e8;
+            color: #2a2a2a;
+            font-family: "Courier New", Courier, monospace;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 30px 20px;
+            line-height: 1.7;
+        }
+
+        a { color: #5544aa; }
+        a:hover { color: #e6522c; }
+        a:visited { color: #774499; }
+
+        .back {
+            font-size: 12px;
+            letter-spacing: 1px;
+        }
+
+        .book-header {
+            text-align: center;
+            margin: 30px 0;
+            padding-bottom: 20px;
+            border-bottom: 1px dashed #ccc;
+        }
+
+        .book-ascii-large {
+            font-size: 12px;
+            line-height: 1.15;
+            white-space: pre;
+            color: #888;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+
+        h1 {
+            font-size: 1.2em;
+            letter-spacing: 2px;
+            text-transform: lowercase;
+            margin-bottom: 2px;
+        }
+
+        .author {
+            color: #777;
+            font-size: 12px;
+        }
+
+        .meta {
+            margin-top: 15px;
+            font-size: 10px;
+            color: #999;
+            letter-spacing: 1px;
+        }
+
+        .meta span {
+            display: inline-block;
+            border: 1px solid #ddd;
+            padding: 2px 8px;
+            margin: 2px;
+            background: #fff;
+        }
+
+        .rating {
+            color: #e6522c;
+            font-size: 14px;
+            letter-spacing: 3px;
+            margin-top: 10px;
+        }
+
+        .review {
+            margin-top: 30px;
+        }
+
+        .review p {
+            margin: 15px 0;
+            font-size: 13px;
+        }
+
+        blockquote {
+            border-left: 3px solid #e6522c;
+            margin: 20px 0;
+            padding: 10px 15px;
+            color: #555;
+            font-style: italic;
+            background: #fffdf7;
+        }
+
+        .verdict {
+            margin-top: 30px;
+            padding: 15px;
+            border: 1px solid #ccc;
+            background: #fff;
+            font-size: 12px;
+        }
+
+        .verdict-label {
+            font-weight: bold;
+            font-size: 10px;
+            letter-spacing: 2px;
+            color: #e6522c;
+            margin-bottom: 5px;
+        }
+
+        .nav-books {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 40px;
+            padding-top: 15px;
+            border-top: 1px dashed #ccc;
+            font-size: 11px;
+        }
+
+        footer {
+            margin-top: 40px;
+            padding-top: 15px;
+            border-top: 1px dashed #ccc;
+            font-size: 9px;
+            color: #aaa;
+            text-align: center;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+    <a href="../books.html" class="back">&lt;&lt; back to all books</a>
+
+    <div class="book-header">
+        <pre class="book-ascii-large">
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣀⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣿⣿⡟⠻⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠⣤⣤⣿⣿⡿⠁⠀⡿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠠⣽⣿⣿⣿⣿⣿⣿⣿⣶⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⢠⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣧⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⢠⣰⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣶⣧⣀⡀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⣾⣿⣿⠟⠁⣾⣿⣿⣿⣿⣿⣿⠈⠙⠿⡿⢿⣿⣿⣷⣤⡀⠀⠀
+⠀⠀⠠⣤⣴⣾⡿⠋⠁⠀⢸⣿⣿⣿⣿⣿⣿⣿⣄⠀⠀⠀⠀⠈⠉⠀⠈⠃⠀⠀
+⠀⠀⠀⠈⠉⠉⠀⠀⠀⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣦⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠻⣿⣿⣿⣿⡟⢿⣿⣿⣿⣷⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣹⣿⣿⡿⠀⠀⠙⢿⣿⣿⣆⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⢤⣶⣾⣿⣿⣿⣿⠃⠀⠀⠀⠈⣿⣿⣟⠃⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⣰⣿⣿⠟⠉⠀⠋⠁⠀⠀⠀⠀⠀⣿⣿⡿⠃⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠙⠛⠻⠿⣷⡆⠀⠀⠀⠀⠀⠀⢀⣿⣿⣷⣶⣶⣶⣦⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠉⠉⠉⠀⠀⠀⠀
+        </pre>
+
+        <h1>devolution</h1>
+        <div class="author">by Max Brooks</div>
+
+        <div class="meta">
+            <span>horror</span>
+            <span>304 pages</span>
+            <span>read jan 2026</span>
+        </div>
+
+        <div class="rating">****. 4/5</div>
+    </div>
+
+    <div class="review">
+        <p>
+            Very propulsive plot. Read it quickly.
+        </p>
+
+        <p>
+            Kate was a believable narrator. Fun to muse about human
+            ineptitude in this age of dazzling technology.
+        </p>
+    </div>
+
+    <div class="verdict">
+        <div class="verdict-label">VERDICT</div>
+        Would recommend for a single read.
+    </div>
+
+    <div class="nav-books">
+        <span></span>
+        <a href="../books.html">all books</a>
+        <span></span>
+    </div>
+
+    <footer>mrmungus.com &middot; made by hand</footer>
+</body>
+</html>
