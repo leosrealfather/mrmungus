@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>video - connor's place</title>
+    <link rel="stylesheet" href="system.css">
+    <style>
+        html, body {
+            margin: 0;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            box-sizing: border-box;
+            min-height: 100vh;
+        }
+        .desktop {
+            max-width: 700px;
+            width: 100%;
+            margin-top: 20px;
+        }
+        .window {
+            width: 100%;
+        }
+        .window-pane {
+            padding: 1.5rem 2rem;
+        }
+        .video-embed {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%;
+            border: 1.5px solid #000;
+            background: #000;
+        }
+        .video-embed iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        .video-label {
+            font-family: Chicago_12;
+            font-size: 16px;
+            margin-top: 1rem;
+            text-align: center;
+        }
+        .video-date {
+            font-family: Geneva_9;
+            font-size: 13px;
+            color: #666;
+            text-align: center;
+            margin-top: 4px;
+        }
+        .back-btn {
+            margin-bottom: 12px;
+            display: inline-block;
+        }
+        .back-btn a {
+            text-decoration: none;
+        }
+        .footer-text {
+            font-family: Geneva_9;
+            font-size: 12px;
+            text-align: center;
+            color: #666;
+            margin-top: 15px;
+            padding-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="desktop">
+        <div class="back-btn">
+            <a href="index.html"><button class="btn">&lt;&lt; Back to Horse</button></a>
+        </div>
+
+        <div class="window">
+            <div class="title-bar">
+                <button aria-label="Close" class="close"></button>
+                <h1 class="title">Beach Day</h1>
+                <button aria-label="Resize" class="hidden"></button>
+            </div>
+            <div class="separator"></div>
+            <div class="details-bar">
+                <span>April 4, 2026</span>
+            </div>
+            <div class="window-pane">
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/ArtzrVGTj3E" allowfullscreen></iframe>
+                </div>
+                <p class="video-label">Beach Day</p>
+                <p class="video-date">April 4, 2026</p>
+            </div>
+        </div>
+
+        <p class="footer-text">mrmungus.com · made by hand</p>
+    </div>
+</body>
+</html>
